@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title> Обчислення оцінки </title>
+    <meta http-equiv="content-type"  content="text/html; charset=utf-8" />
+	<script language="Javascript">
+		function area1 (b,m) {
+		    const p=b.value/m.value*100;
+			if (p>=100) {
+				form1.output1.value=12
+			} else if (p>=92) {
+				form1.output1.value=11
+			} else if (p>=83) {
+				form1.output1.value=10
+			} else if (p>=75) {
+				form1.output1.value=9
+			} else if (p>=67) {
+				form1.output1.value=8
+			} else if (p>=58) {
+				form1.output1.value=7
+			} else if (p>=50) {
+				form1.output1.value=6
+			} else if (p>=42) {
+				form1.output1.value=5
+			} else if (p>=33) {
+				form1.output1.value=4
+			} else if (p>=25) {
+				form1.output1.value=3
+			} else if (p>=17) {
+				form1.output1.value=2
+			} else  {
+				form1.output1.value=1
+			}
+		}
+	</script>
+  </head>
+  <body>
+    <p> Обчислення оцінки </p>
+	<form name="form1">
+	  <fieldset style="width: 40%">
+	    <legend> Введення даних </legend>
+    	 Набраий бал: <input type="text" size=7  name="st1">
+	     Мах бал: <input type="text" size=7 name="st2">  <br>
+	  </fieldset>
+	  <fieldset style="width: 40%">
+		<legend> Обробка та виведення даних </legend>
+		Оцінка:  <input type="text" size=7 name="output1" readonly > <br>
+   <input type="button" value="Обчислити" style="margin:10px"    onClick="area1(form1.st1, form1.st2)">
+	  </fieldset>
+	  <p> Критерії оцінювання: </p>
+	  <p> "12" не менше 100% максимальної кількості балів; </p>
+	  <p> "11" не менше 92% максимальної кількості балів; </p>
+	  <p> "10" не менше 83% максимальної кількості балів; </p>
+	  <p> "9" не менше 75% максимальної кількості балів; </p>
+	  <p> "8" не менше 67% максимальної кількості балів; </p>
+	  <p> "7" не менше 58% максимальної кількості балів; </p>
+	  <p> "6" не менше 50% максимальної кількості балів; </p>
+	  <p> "5" не менше 42% максимальної кількості балів; </p>
+	  <p> "4" не менше 33% максимальної кількості балів; </p>
+	  <p> "3" не менше 25% максимальної кількості балів; </p>
+	  <p> "2" не менше 17% максимальної кількості балів; </p>
+	</form>
+  </body>
+</html>
 
